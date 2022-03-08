@@ -1,8 +1,11 @@
 import React from 'react'
+import ToDoCard from './ToDoCard'
 
 function ToDoDone() {
   return (
-    <div>ToDoDone</div>
+    <div>ToDoDone
+      <ToDoCard />
+    </div>
   )
 }
 
