@@ -1,12 +1,18 @@
 import React from 'react'
 import ToDoCard from './ToDoCard'
 
-function ToDoList() {
+function ToDoList({ toDoList }) {
+  // console.log(toDoList)
   return (
     <div>ToDoList
-        <ToDoCard />
+        {toDoList.map(toDoItem => (
+            <ToDoCard 
+              key = {toDoItem.id}
+              toDoItem = {toDoItem}
+            />
+          )
+        )}
     </div>
-
   )
 }
 

@@ -1,8 +1,15 @@
 import React from 'react'
 
-function ToDoCard() {
+function ToDoCard({toDoItem}) {
+  // console.log(toDoItem)
   return (
-    <div>ToDoCard</div>
+    <>
+      <div>card
+        {/* <ul key={toDoItem}>
+          <li key={toDoItem.task}>{toDoItem}</li>
+        </ul> */}
+      </div>
+    </>
   )
 }
 
